@@ -11,14 +11,330 @@
 <div class="main-wrapper">
     <!-- HEADER -->
     <header class="header">
-        <div class="container bg-light">
-            <h1>Header Title</h1>
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">
+                    <picture>
+                        <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/logo.svg') %>" alt="" title="">
+                    </picture>
+                </a>
+                <nav class="header-content__menu">
+                    <ul>
+                        <li><a href="/">О компании</a></li>
+                        <li><a href="/">Наши услуги</a></li>
+                        <li><a href="/">Новости</a></li>
+                        <li><a href="/">Рекомендации</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <!-- HEADER END -->
 
     <!-- CONTENT -->
     <main class="content">
+        <section class="section section-main">
+            <div class="container">
+                <div class="main-content">
+                    <div class="main-content-top">
+                        <p class="title-text">DEMOCRAT — надежный партнер в борьбе с интернет-мошенниками и возврате утраченных средств.</p>
+                        <p class="simple-text">Мы понимаем насколько болезненно лишиться честно заработанных средств из-за обмана. Но помните, что Ислам учит нас помогать друг другу и восстанавливать справедливость. Мы не только вернем ваши деньги, но и добьемся того, чтобы мошенники понесли наказание.</p>
+                        <p class="simple-text">С нами вы можете быть уверены, что ваши права будут защищены. Аллах велит нам «возвращать доверенное имущество его владельцам и судить справедливо» (Коран, 4:58).</p>
+                    </div>
+
+                    <div class="main-content-text">
+                        <p class="title-text">Не ждите — получите бесплатную консультацию от наших экспертов!</p>
+                        <p class="simple-text">Многие люди, оказавшиеся жертвами мошенников, не знают, с чего начать. Мы готовы помочь вам разобраться. Оставьте ваши контактные данные, и в течение 24 часов мы свяжемся с вами для консультации</p>
+                    </div>
+                    <div class="main-content-bid">
+                        <picture>
+                            <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/form_image.png') %>" alt="" title="">
+                        </picture>
+
+                        <form action="" method="post" class="main-form">
+                            <label>
+                                <input type="text" placeholder="Полное Имя">
+                            </label>
+                            <label>
+                                <input type="email" placeholder="Электронная Почта">
+                            </label>
+                            <label>
+                                <input type="tel" placeholder="Номер телефона">
+                            </label>
+                            <label>
+                                <textarea name="" cols="30" rows="10" placeholder="Коротко о вашей ситуации:"></textarea>
+                            </label>
+
+                            <input type="submit" value="ПолучитЬ бесплатную консультацию">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-offer">
+            <div class="container">
+                <div class="brief">
+                    <p class="brief__title title-text">Что вы получите</p>
+                    <div class="brief-steps">
+                        <div class="brief-steps__box">
+                            <p class="brief-steps__number">#1</p>
+                            <p class="brief-steps__text">Оценку вашей ситуации.</p>
+                        </div>
+
+                        <div class="brief-steps__box">
+                            <p class="brief-steps__number">#2</p>
+                            <p class="brief-steps__text">Индивидуальные рекомендации по возврату средств.</p>
+                        </div>
+
+                        <div class="brief-steps__box">
+                            <p class="brief-steps__number">#3</p>
+                            <p class="brief-steps__text">Ответы на все ваши вопросы.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="solution">
+                    <div class="solution__content">
+                        <p class="solution__title title-text">Как мы решаем проблемы:</p>
+                        <p class="solution__text">Мошенники часто притворяются легальными  компаниями, чтобы обмануть людей. Наша команда опытных юристов знает, как разоблачить их и вернуть вам ваши деньги, а также добиться компенсации за моральный ущерб.</p>
+                        <p class="solution__text">Мы уже разобрали более 120 схем мошенничества и помогли сотням людей вернуть свои средства. В 98% случаев мы успешно возвращаем украденные деньги благодаря нашему опыту и тесным связям с государственными структурами.</p>
+                        <p class="solution__text">Президент Казахстана сказал: «Интернет-мошенничество — это вызов современности, и юристы, защищающие права граждан, играют ключевую роль в борьбе с этим злом».</p>
+
+                        <a href="#form_request" class="solution__link">ПолучитЬ бесплатную консультацию</a>
+                    </div>
+
+                    <picture>
+                        <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/company-name.png') %>" alt="" title="">
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-fraud">
+            <div class="container">
+                <div class="fraud">
+                    <p class="fraud__title title-text">Типы мошенничества, с которыми мы работаем</p>
+
+                    <div class="fraud-type">
+                        <div class="fraud-type__box">
+                            <picture>
+                                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/type_01.png') %>" alt="" title="">
+                            </picture>
+                            <p class="fraud-type__box-name">Брокерские схемы:</p>
+                            <p class="fraud-type__box-text">Когда недобросовестные брокеры обещают высокие доходы, а затем исчезают с вашими деньгами.</p>
+                        </div>
+                        <div class="fraud-type__box">
+                            <picture>
+                                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/type_02.png') %>" alt="" title="">
+                            </picture>
+                            <p class="fraud-type__box-name">Финансовые пирамиды:</p>
+                            <p class="fraud-type__box-text">Схемы Понци, обещающие быстрый доход, но приводящие к значительным потерям.</p>
+                        </div>
+                        <div class="fraud-type__box">
+                            <picture>
+                                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/type_03.png') %>" alt="" title="">
+                            </picture>
+                            <p class="fraud-type__box-name">Банковское мошенничество:</p>
+                            <p class="fraud-type__box-text">Когда ваши данные используются для оформления кредитов или займов без вашего согласия.</p>
+                        </div>
+                        <div class="fraud-type__box">
+                            <picture>
+                                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/type_04.png') %>" alt="" title="">
+                            </picture>
+                            <p class="fraud-type__box-name">Интернет-мошенничество:</p>
+                            <p class="fraud-type__box-text">Фишинговые атаки и другие киберпреступления, целью которых являются ваши банковские данные.</p>
+                        </div>
+                        <div class="fraud-type__box">
+                            <picture>
+                                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/type_05.png') %>" alt="" title="">
+                            </picture>
+                            <p class="fraud-type__box-name">Ложные онлайн-сервисы:</p>
+                            <p class="fraud-type__box-text">Когда вы платите за товары или услуги, которых на самом деле нет.</p>
+                        </div>
+                        <div class="fraud-type__box">
+                            <picture>
+                                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/type_06.png') %>" alt="" title="">
+                            </picture>
+                            <p class="fraud-type__box-name">Бинарные опционы:</p>
+                            <p class="fraud-type__box-text">Ставший популярным метод хищения средств - организация бинарных опционов с которых невозможно получить выплату самостоятельно.</p>
+                        </div>
+                    </div>
+
+                    <a href="#form_request" class="fraud__link">ПолучитЬ бесплатную консультацию</a>
+                </div>
+
+                <div class="why-us">
+                    <p class="why-us__title"></p>
+                    <div class="why-us__content">
+                        <div class="why-us__box">
+                            <svg class="why-us__ico">
+                                <use xlink:href="img/spritemap.svg#sprite-user"></use>
+                            </svg>
+                            <p class="why-us__title">Опыт и профессионализм:</p>
+                            <p class="why-us__text">Мы — эксперты в сфере финансового права и борьбы с мошенничеством.</p>
+                        </div>
+                        <div class="why-us__box">
+                            <svg class="why-us__ico">
+                                <use xlink:href="img/spritemap.svg#sprite-safe"></use>
+                            </svg>
+                            <p class="why-us__title">98% успеха:</p>
+                            <p class="why-us__text">Благодаря нашему сотрудничеству с государственными органами и банками, большинство дел решаются в пользу наших клиентов.</p>
+                        </div>
+                        <div class="why-us__box">
+                            <svg class="why-us__ico">
+                                <use xlink:href="img/spritemap.svg#sprite-guarantee"></use>
+                            </svg>
+                            <p class="why-us__title">Гарантия результата:</p>
+                            <p class="why-us__text">Мы работаем до достижения успеха.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-leaders">
+            <div class="container">
+                <div class="quote">
+                    <picture>
+                        <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/mosque.png') %>" alt="" title="">
+                    </picture>
+
+                    <div class="quote__block">
+                        <p class="quote__text">
+                            Аллах велит поступать справедливо и творить добро (Коран, 16:90).<br>
+                            Мы будем бороться за вас, вернем ваши деньги и добьемся компенсации.<br>
+                            Не позволяйте мошенникам разрушить вашу жизнь — обратитесь к профессионалам, которые восстановят справедливость!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="leaders">
+                    <p class="leaders__title title-text"></p>
+                    <div class="leaders-content">
+                        <div class="leaders-content__box">
+                            <p class="leaders-content__position">Генеральный директор</p>
+                            <p class="leaders-content__name">Айдар Нурмухамедов</p>
+                            <picture>
+                                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/leader_01.png') %>" alt="" title="">
+                            </picture>
+                            <p class="leaders-content__info">Ведущий специалист в области финансового права с более чем 16-летним опытом. Как арбитр Первого Экономического Арбитража, он решал самые сложные споры. Его глубокие знания и умение находить эффективные решения делают Айдара ключевой фигурой в нашей команде, защищая интересы клиентов.</p>
+                        </div>
+
+                        <div class="leaders-content__box">
+                            <p class="leaders-content__position">Управляющий партнер</p>
+                            <p class="leaders-content__name">Эльдар Тажибаев</p>
+                            <picture>
+                                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/leader_02.png') %>" alt="" title="">
+                            </picture>
+                            <p class="leaders-content__info">Адвокат и эксперт в финансовом праве с репутацией надежного специалиста в Алматинской городской коллегии адвокатов. Он разрабатывает стратегии по возврату средств и защите прав клиентов. Его индивидуальный подход к каждому делу позволяет эффективно бороться с мошенничеством.</p>
+                        </div>
+
+                        <div class="leaders-content__box">
+                            <p class="leaders-content__position">Старший партнер</p>
+                            <p class="leaders-content__name">Айжан Султанова</p>
+                            <picture>
+                                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/leader_03.png') %>" alt="" title="">
+                            </picture>
+                            <p class="leaders-content__info">Эксперт с 10-летним опытом в банковском и криминальном праве. Она специализируется на расследовании и решении сложных случаев мошенничества. Ее внимание к деталям и умение разрабатывать стратегии делают Айжан важным членом команды, обеспечивая уверенность клиентов в успешном исходе дела.</p>
+                        </div>
+                    </div>
+
+                    <a href="#form_request" class="leaders__link">ПолучитЬ бесплатную консультацию</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-reviews">
+            <div class="container">
+                <div class="reviews">
+                    <div class="reviews__info">
+                        <p class="reviews__title title-text">Отзывы</p>
+
+                        <p class="reviews__text">В наше время отзывы легко подделать с помощью технологий или просто заплатив людям за нужный текст.</p>
+                        <p class="reviews__text">Но мы предлагаем большее. У нас есть реальные документы, подтверждающие успешные возвраты средств нашим клиентам. Мы предоставляем официальные доказательства, которые говорят сами за себя. Когда речь идет о возврате ваших денег, мы действуем прозрачно и надежно. </p>
+                        <p class="reviews__text">Мы готовы показать вам выписки операций за наши последние  решенные ситуации:</p>
+                    </div>
+
+                    <div class="reviews__slider"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-faq">
+            <div class="container">
+                <div class="faq">
+                    <p class="faq__title title-text">Часто задаваемые вопросы</p>
+
+                    <div class="faq__content">
+                        <div class="faq__block">
+                            <p class="faq__block-title">Какое лучшее решение для жертв интернет-мошенничества?</p>
+
+                            <p class="faq__block-text">В цифровую эпоху интернет-мошенничество стало частым явлением, и даже самые внимательные пользователи могут оказаться жертвами. Но выход есть. Программа возврата средств от DEMOCRAT уже помогла множеству людей вернуть свои деньги и восстановить справедливость.</p>
+                            <p class="faq__block-text">Основные преимущества программы возврата средств:</p>
+
+                            <ul class="faq__block-list">
+                                <li>Консультации и расследования: Мы предлагаем экспертизу и проводим глубокие расследования, чтобы найти мошенников и вернуть ваши деньги.</li>
+                                <li>Разрешение споров: Наша команда помогает решить споры с мошенниками, добиваясь возврата утраченных средств.</li>
+                                <li>Анализ цифровых следов: Мы используем современные технологии для отслеживания мошенников и анализа кибертранзакций.</li>
+                                <li>Углубленное расследование: Каждое дело рассматривается детально, что гарантирует лучший результат.</li>
+                            </ul>
+                        </div>
+                        <div class="faq__block">
+                            <p class="faq__block-title">Какой срок возврата средств?</p>
+                            <p class="faq__block-text">Срок зависит от сложности дела, но в большинстве случаев мы решаем проблему в течение 96 часов, благодаря тесному взаимодействию с государственными органами и банками.</p>
+                        </div>
+                        <div class="faq__block">
+                            <p class="faq__block-title">Что нужно для участия в программе?</p>
+                            <ul class="faq__block-list faq__block-list_min">
+                                <li>Оставить заявку на сайте.</li>
+                                <li>Обсудить ситуацию с нашим специалистом.</li>
+                                <li>Следовать инструкциям на каждом этапе.</li>
+                            </ul>
+                        </div>
+                        <div class="faq__block">
+                            <p class="faq__block-title">Как избежать мошенничества в интернете?</p>
+                            <ul class="faq__block-list faq__block-list_min">
+                                <li>Проверяйте компании и отзывы перед покупкой.</li>
+                                <li>Используйте проверенные платежные системы.</li>
+                                <li>Будьте осторожны с слишком заманчивыми предложениями.</li>
+                                <li>Никогда не передавайте личные данные по электронной почте или на ненадежных сайтах.</li>
+                                <li>Остерегайтесь фишинговых писем и подозрительных ссылок.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-request">
+            <div class="container">
+                <div class="request">
+                    <form action="" class="request__form">
+                        <label>
+                            <input type="text" placeholder="Полное Имя">
+                        </label>
+                        <label>
+                            <input type="email" placeholder="Электронная Почта">
+                        </label>
+                        <label>
+                            <input type="tel" placeholder="Номер телефона">
+                        </label>
+                        <label>
+                            <textarea name="" cols="30" rows="10" placeholder="Коротко о вашей ситуации:"></textarea>
+                        </label>
+
+                        <input type="submit" value="ПолучитЬ бесплатную консультацию">
+                    </form>
+
+                    <picture>
+                        <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/dmct_kz.png') %>" alt="" title="">
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+        <!--\/\/\/\/\/\/\/\/-->
         <div class="section">
             <div class="container">
                 <h2>Section Slider</h2>
@@ -100,8 +416,33 @@
 
     <!-- FOOTER -->
     <footer class="footer">
-        <div class="container bg-info">
-            <h3 class="m-0">Footer Title</h3>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-content__block">
+                    <a href="/" class="logo">
+                        <picture>
+                            <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/logo.svg') %>" alt="" title="">
+                        </picture>
+                    </a>
+                </div>
+                <div class="footer-content__block">
+                    <p class="footer-content__block-name">Наш адресс:</p>
+                    <div class="footer-content__block-text">г.Алматы, Ауэзовский район, Микрорайон Жетысу-3, дом 23</div>
+                </div>
+                <div class="footer-content__block">
+                    <p class="footer-content__block-name">Наши контактые номера:</p>
+                    <ul class="footer-content__block-contact">
+                        <li><a href="tel:+77051010627">+77051010627</a></li>
+                        <li><a href="tel:+77051013716">+77051013716</a></li>
+                        <li><a href="tel:+77051028556">+77051028556</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-underside">
+                <p class="copyright">© Все права защищены, ТОО "ЮРИДИЧЕСКАЯ КОМПАНИЯ "DEMOCRAT", 181240025822</p>
+                <a href="/" class="policy">Политика конфиденциальности</a>
+            </div>
         </div>
     </footer>
     <!-- FOOTER END -->
