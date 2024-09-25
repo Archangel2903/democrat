@@ -1,16 +1,30 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --blackish: #111111;
+  --deep-gray: #333333;
+  --softGray: #f1f1f1;
+  --first-color: #0DC7DA;
+  --second-color: #007d00;
+  --third-color: #000082;
+}
+
 // main colors
-$main-first-color: #7a0000;
-$main-second-color: #007d00;
-$main-third-color: #000082;
+$main-first-color: var(--first-color);
+$main-second-color: var(--second-color);
+$main-third-color: var(--third-color);
 
 // colors
-$title-color: #111;
-$text-color: #333;
-$input-placeholder-color: #aaa;
+$title-color: var(--deep-gray);
+$text-color: $title-color;
+$link-color: $title-color;
+$link-hover-color: var(--first-color);
+$input-placeholder-color: $title-color;
+
 
 // fonts
-$font-family-base: 'Verdana', sans-serif;
-$font-family-custom: 'Arial', sans-serif;
+$font-family-base: 'Montserrat', sans-serif;
+$font-family-custom: 'Verdana', sans-serif;
 $font-family-unique: 'Times New Roman', serif;
 
 // font-weight
@@ -18,12 +32,31 @@ $font-weight-medium: 500;
 $font-weight-sbold: 600;
 
 // font-size
-$font-size-default: 16px;
-$line-height-base: 1.25;
+$font-size-default: 20px;
+$line-height-base: 1.2;
 
 // behavior
-$transition-base: all .3s ease 0s;
+$transition-base: all .3s ease-in-out 0s;
 
 //Bootstrap var
-$enable-shadows: true;
+$enable-shadows: false;
 $body-color: $text-color;
+$grid-gutter-width: 40px;
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 640px,
+        md: 768px,
+        lg: 1025px,
+        xl: 1440px,
+);
+
+$container-max-widths: ();
+
+$firstIteration: true;
+@each $breakpoint, $value in $grid-breakpoints {
+  @if not $firstIteration {
+    $container-max-widths: map-merge($container-max-widths, ($breakpoint: $value - $grid-gutter-width));
+  }
+  $firstIteration: false;
+}

@@ -5,6 +5,33 @@ footer.footer {
   order: 3;
   -webkit-order: 3;
   position: relative;
+  padding: 20px 0 16px;
 }
 
-.copyright {}
+.footer {
+  &-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: flex-start;
+
+    &__block {
+      &:first-child {
+        align-self: center;
+      }
+    }
+  }
+
+  &-underside {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+.copyright {
+  margin: 0;
+}

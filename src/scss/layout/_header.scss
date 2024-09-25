@@ -9,3 +9,25 @@ header.header {
   width: 100%;
   z-index: 100;
 }
+
+.header-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding: 16px 0;
+
+  &__menu {
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    gap: 40px;
+
+    &-link {
+      text-decoration: none !important;
+    }
+  }
+}
