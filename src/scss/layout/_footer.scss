@@ -15,10 +15,20 @@ footer.footer {
     justify-content: space-between;
     align-content: flex-start;
     align-items: flex-start;
+    margin: 0 0 6px;
 
     &__block {
       &:first-child {
         align-self: center;
+      }
+
+      &-text {
+        max-width: 260px;
+      }
+      &-contact {
+        padding: 0;
+        margin: 0;
+        text-align: right;
       }
     }
   }
@@ -33,5 +43,11 @@ footer.footer {
 }
 
 .copyright {
+  max-width: 640px;
   margin: 0;
+}
+
+.policy {
+  align-self: flex-end;
+  text-decoration: underline;
 }

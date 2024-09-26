@@ -16,6 +16,8 @@ $(window).on('load', function () {
     }
 
     pw.fadeOut(300);
+
+    anchorLinks();
 });
 
 $(function () {
@@ -29,21 +31,9 @@ $(function () {
                 observer: true,
                 observeParents: true,
                 loop: true,
-                autoplay: true,
-                spaceBetween: 25,
-                slidesPerView: 1,
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev'
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true
-                },
-                /*scrollbar: {
-                    el: '.swiper-scrollbar',
-                },*/
-                dynamicBullets: true,
+                spaceBetween: 40,
+                slidesPerView: 'auto',
+                mousewheel: true
             });
         }
     }
@@ -67,3 +57,23 @@ $(function () {
         });
     }
 });
+
+function anchorLinks() {
+    const anchorLinks = document.querySelectorAll('a[href^="#"]');
+    anchorLinks.forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetID = this.getAttribute('href').substring(1);
+
+            const targetElement = document.getElementById(targetID);
+            if (targetElement) {
+                const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+
+                window.scrollTo({
+                    top: elementPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+}

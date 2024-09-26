@@ -1,2 +1,57 @@
 $fonts-path: '../fonts/';
 
+@font-face {
+  font-family:'Montserrat';
+  src: url('#{$fonts-path}Montserrat Bold.eot');
+  src: url('#{$fonts-path}Montserrat Bold.eot?#iefix') format('embedded-opentype'),
+  url('#{$fonts-path}Montserrat Bold.woff2') format('woff2'),
+  url('#{$fonts-path}Montserrat Bold.woff') format('woff'),
+  url('#{$fonts-path}Montserrat Bold.ttf') format('truetype'),
+  url('#{$fonts-path}Montserrat Bold.svg#Montserrat Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2044;
+}
+
+@font-face {
+  font-family:'Montserrat Medium';
+  src: url('#{$fonts-path}Montserrat Medium.eot');
+  src: url('#{$fonts-path}Montserrat Medium.eot?#iefix') format('embedded-opentype'),
+  url('#{$fonts-path}Montserrat Medium.woff2') format('woff2'),
+  url('#{$fonts-path}Montserrat Medium.woff') format('woff'),
+  url('#{$fonts-path}Montserrat Medium.ttf') format('truetype'),
+  url('#{$fonts-path}Montserrat Medium.svg#Montserrat Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2044;
+}
+
+@font-face {
+  font-family:'Montserrat';
+  src: url('#{$fonts-path}Montserrat Regular.eot');
+  src: url('#{$fonts-path}Montserrat Regular.eot?#iefix') format('embedded-opentype'),
+  url('#{$fonts-path}Montserrat Regular.woff2') format('woff2'),
+  url('#{$fonts-path}Montserrat Regular.woff') format('woff'),
+  url('#{$fonts-path}Montserrat Regular.ttf') format('truetype'),
+  url('#{$fonts-path}Montserrat Regular.svg#Montserrat Regular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2044;
+}
+
+@font-face {
+  font-family:'Montserrat Light';
+  src: url('#{$fonts-path}Montserrat Light.eot');
+  src: url('#{$fonts-path}Montserrat Light.eot?#iefix') format('embedded-opentype'),
+  url('#{$fonts-path}Montserrat Light.woff2') format('woff2'),
+  url('#{$fonts-path}Montserrat Light.woff') format('woff'),
+  url('#{$fonts-path}Montserrat Light.ttf') format('truetype'),
+  url('#{$fonts-path}Montserrat Light.svg#Montserrat Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2044;
+}

@@ -106,14 +106,14 @@ button, input, textarea {
 
 ::-webkit-input-placeholder {
   font-weight: $font-weight-light;
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: $input-placeholder-color;
   transition: $transition-base;
 }
 
 ::-webkit-textarea-placeholder {
   font-weight: $font-weight-light;
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: $input-placeholder-color;
   transition: $transition-base;
 }
@@ -128,8 +128,6 @@ input {
     -moz-appearance: textfield;
 
     &:focus {
-      background: none;
-
       &::-webkit-input-placeholder {
         color: transparent;
         transform: rotate3d(1, 0, 0, 90deg);
@@ -168,13 +166,13 @@ input {
 
   &::-moz-placeholder {
     font-weight: $font-weight-light;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: $input-placeholder-color;
     transition: $transition-base;
   }
   &::-ms-placeholder {
     font-weight: $font-weight-light;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: $input-placeholder-color;
     transition: $transition-base;
   }
@@ -188,8 +186,6 @@ textarea {
   padding: 0 5px;
 
   &:focus {
-    background: none;
-
     &::-webkit-input-placeholder {
       color: transparent;
       transform: rotate3d(1, 0, 0, 90deg);

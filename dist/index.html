@@ -5,7 +5,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, shrink-to-fit=no">
     <title>Главная</title>
-<link rel="shortcut icon" href="favicon.ico"><link href="style.c46d60cd05bedf261bdd.min.css" rel="stylesheet"></head>
+<link rel="shortcut icon" href="favicon.ico"><link href="style.1e912fcfc65d83588f08.min.css" rel="stylesheet"></head>
 <body>
 <!-- BODY -->
 <div class="main-wrapper">
@@ -56,20 +56,36 @@
                         </picture>
 
                         <form action="" method="post" class="main-form">
-                            <label>
-                                <input type="text" placeholder="Полное Имя">
-                            </label>
-                            <label>
-                                <input type="email" placeholder="Электронная Почта">
-                            </label>
-                            <label>
-                                <input type="tel" placeholder="Номер телефона">
-                            </label>
-                            <label>
-                                <textarea name="" cols="30" rows="10" placeholder="Коротко о вашей ситуации:"></textarea>
-                            </label>
+                            <div class="form-row">
+                                <div class="col-12">
+                                    <label class="form-group">
+                                        <input type="text" name="name" placeholder="Полное Имя">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-12">
+                                    <label class="form-group">
+                                        <input type="email" name="email" placeholder="Электронная Почта">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-12">
+                                    <label class="form-group">
+                                        <input type="tel" name="phone" placeholder="Номер телефона">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-12">
+                                    <label class="form-group">
+                                        <textarea name="message" placeholder="Коротко о вашей ситуации:"></textarea>
+                                    </label>
+                                </div>
+                            </div>
 
-                            <input type="submit" value="ПолучитЬ бесплатную консультацию">
+                            <input type="submit" class="main-form__submit" value="ПолучитЬ бесплатную консультацию">
                         </form>
                     </div>
                 </div>
@@ -105,7 +121,7 @@
                         <p class="solution__text">Мы уже разобрали более 120 схем мошенничества и помогли сотням людей вернуть свои средства. В 98% случаев мы успешно возвращаем украденные деньги благодаря нашему опыту и тесным связям с государственными структурами.</p>
                         <p class="solution__text">Президент Казахстана сказал: «Интернет-мошенничество — это вызов современности, и юристы, защищающие права граждан, играют ключевую роль в борьбе с этим злом».</p>
 
-                        <a href="#form_request" class="solution__link">ПолучитЬ бесплатную консультацию</a>
+                        <a href="#form_offer" class="solution__link">ПолучитЬ бесплатную консультацию</a>
                     </div>
 
                     <picture class="solution__img">
@@ -165,7 +181,7 @@
                         </div>
                     </div>
 
-                    <a href="#form_request" class="fraud__link">ПолучитЬ бесплатную консультацию</a>
+                    <a href="#form_offer" class="fraud__link">ПолучитЬ бесплатную консультацию</a>
                 </div>
 
                 <div class="why-us">
@@ -245,7 +261,7 @@
                         </div>
                     </div>
 
-                    <a href="#form_request" class="leaders__link">ПолучитЬ бесплатную консультацию</a>
+                    <a href="#form_offer" class="leaders__link">ПолучитЬ бесплатную консультацию</a>
                 </div>
             </div>
         </section>
@@ -261,7 +277,48 @@
                         <p class="reviews__text">Мы готовы показать вам выписки операций за наши последние  решенные ситуации:</p>
                     </div>
 
-                    <div class="reviews__slider"></div>
+                    <div class="reviews__slider">
+                        <div class="main-slider swiper-container">
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <img src="img/default.svg" data-src="img/doc_01.png" alt="example" title="example">
+                                    </picture>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <img src="img/default.svg" data-src="img/doc_02.png" alt="example" title="example">
+                                    </picture>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <img src="img/default.svg" data-src="img/doc_03.png" alt="example" title="example">
+                                    </picture>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <img src="img/default.svg" data-src="img/doc_04.png" alt="example" title="example">
+                                    </picture>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <img src="img/default.svg" data-src="img/doc_05.png" alt="example" title="example">
+                                    </picture>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <img src="img/default.svg" data-src="img/doc_06.png" alt="example" title="example">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -315,21 +372,37 @@
         <section class="section section-request">
             <div class="container">
                 <div class="request">
-                    <form action="" class="main-form request__form">
-                        <label>
-                            <input type="text" placeholder="Полное Имя">
-                        </label>
-                        <label>
-                            <input type="email" placeholder="Электронная Почта">
-                        </label>
-                        <label>
-                            <input type="tel" placeholder="Номер телефона">
-                        </label>
-                        <label>
-                            <textarea name="" cols="30" rows="10" placeholder="Коротко о вашей ситуации:"></textarea>
-                        </label>
+                    <form id="form_offer" class="main-form" action="" method="post">
+                        <div class="form-row">
+                            <div class="col-12">
+                                <label class="form-group">
+                                    <input type="text" name="name" placeholder="Полное Имя">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-12">
+                                <label class="form-group">
+                                    <input type="email" name="email" placeholder="Электронная Почта">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-12">
+                                <label class="form-group">
+                                    <input type="tel" name="phone" placeholder="Номер телефона">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-12">
+                                <label class="form-group">
+                                    <textarea name="message" placeholder="Коротко о вашей ситуации:"></textarea>
+                                </label>
+                            </div>
+                        </div>
 
-                        <input type="submit" value="ПолучитЬ бесплатную консультацию">
+                        <input type="submit" class="main-form__submit" value="ПолучитЬ бесплатную консультацию">
                     </form>
 
                     <picture class="request__img">
@@ -443,5 +516,5 @@
     </div>
 </div>
 <!-- BODY END   -->
-<script type="text/javascript" src="bundle.c46d60cd05bedf261bdd.min.js"></script></body>
+<script type="text/javascript" src="bundle.1e912fcfc65d83588f08.min.js"></script></body>
 </html>

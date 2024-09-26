@@ -119,6 +119,33 @@
 .main-form {
   width: 100%;
   max-width: 527px;
+
+  .form-group {
+    width: 100%;
+  }
+
+  input:not([type="submit"]) {
+    width: 100%;
+    padding: 14px 20px;
+    border: 1px solid var(--gray);
+    border-radius: 30px;
+  }
+  textarea {
+    width: 100%;
+    min-height: 100px;
+    height: 130px;
+    max-height: 160px;
+    padding: 14px 20px;
+    border: 1px solid var(--gray);
+    border-radius: 30px;
+    transition: none;
+  }
+
+  &__submit {
+    @extend .btn, .btn-lg, .btn-info, .offer-link;
+    width: 100%;
+    padding: 10px 40px;
+  }
 }
 
 .offer-link {
@@ -126,6 +153,17 @@
   background: var(--first-color);
   border: none;
   border-radius: 30px;
+  color: var(--white);
   font-weight: 700;
+  line-height: 1.2;
   text-transform: uppercase;
+  white-space: normal;
+}
+
+.main-slider {
+  .swiper {
+    &-slide {
+      width: auto;
+    }
+  }
 }
