@@ -92,8 +92,8 @@
   &:after {
     content: '';
     @extend .section-bg;
-    opacity: .25;
-    //background: $main-first-color-custom;
+    //opacity: .25;
+    background: rgba(0, 0, 0, .82);
     z-index: 0;
   }
 
@@ -107,7 +107,7 @@
 
 .title-text {
   margin: 0 0 16px;
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
@@ -164,6 +164,11 @@
   .swiper {
     &-slide {
       width: auto;
+      max-width: 100%;
+
+      img {
+        width: 100%;
+      }
     }
   }
 }

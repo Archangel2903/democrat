@@ -15,11 +15,21 @@ footer.footer {
     justify-content: space-between;
     align-content: flex-start;
     align-items: flex-start;
-    margin: 0 0 6px;
+    margin: 0 0 30px;
 
     &__block {
-      &:first-child {
-        align-self: center;
+      width: 100%;
+
+      &:nth-child(1) {
+        order: 1;
+        margin: 0 0 16px;
+      }
+      &:nth-child(2) {
+        order: 3;
+      }
+      &:nth-child(3) {
+        order: 2;
+        text-align: right;
       }
 
       &-text {
@@ -40,14 +50,89 @@ footer.footer {
     align-content: flex-start;
     align-items: flex-start;
   }
+
+  .copyright {
+    order: 2;
+    max-width: 640px;
+    margin: 0;
+  }
+  .policy {
+    order: 1;
+    align-self: flex-end;
+    margin: 0 0 20px;
+    text-decoration: underline;
+  }
 }
 
-.copyright {
-  max-width: 640px;
-  margin: 0;
-}
 
-.policy {
-  align-self: flex-end;
-  text-decoration: underline;
+@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(md) {
+  .footer {
+    &-content {
+      margin: 0 0 30px;
+
+      &__block {
+        width: 50%;
+
+        &:nth-child(1) {
+          width: 100%;
+          align-self: center;
+          margin: 0 0 40px;
+        }
+        &:nth-child(2) {
+          order: 2;
+          align-self: center;
+        }
+        &:nth-child(3) {
+          order: 3;
+          align-self: center;
+        }
+      }
+    }
+  }
+}
+@include media-breakpoint-up(lg) {
+  .footer {
+    &-content {
+      &__block {
+        width: 50%;
+
+        &:nth-child(1) {
+          align-self: center;
+          margin: 0;
+        }
+        &:nth-child(2) {
+          order: 2;
+          align-self: center;
+        }
+        &:nth-child(3) {
+          order: 3;
+          align-self: center;
+        }
+      }
+    }
+  }
+}
+@include media-breakpoint-up(xl) {
+  .footer {
+    &-content {
+      &__block {
+        width: auto;
+
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+          width: auto;
+        }
+      }
+    }
+
+    .copyright {
+      order: 1;
+    }
+
+    .policy {
+      order: 2;
+    }
+  }
 }

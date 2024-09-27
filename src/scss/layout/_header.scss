@@ -13,21 +13,50 @@ header.header {
 .header-content {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-content: center;
   align-items: center;
   padding: 16px 0;
 
   &__menu {
-    display: inline-flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    align-content: center;
-    align-items: center;
-    gap: 40px;
+    display: none;
 
     &-link {
       text-decoration: none !important;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .header-content {
+    justify-content: space-between;
+
+    .logo {
+      img {
+        max-width: 240px;
+      }
+    }
+
+    &__menu {
+      display: inline-flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      align-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+}
+@include media-breakpoint-up(xl) {
+  .header-content {
+    .logo {
+      img {
+        max-width: 100%;
+      }
+    }
+
+    &__menu {
+      gap: 40px;
     }
   }
 }

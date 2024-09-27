@@ -30,12 +30,22 @@ $(function () {
             slider = new Swiper('.swiper-container', {
                 observer: true,
                 observeParents: true,
-                loop: true,
-                spaceBetween: 40,
+                loop: slide > 1,
                 slidesPerView: 'auto',
-                mousewheel: true
+                spaceBetween: 40,
+                mousewheel: true,
+                on: {
+                    init: function () {
+                        this.slideToLoop(0, 0); // Перемещаемся на первый слайд
+                    }
+                }
             });
         }
+
+        window.addEventListener('load', () => {
+            slider.update();
+            slider.slideToLoop(0, 0); // Перемещаемся на первый слайд после обновления
+        });
     }
 
     // Lazy load observer
